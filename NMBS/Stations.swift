@@ -17,7 +17,7 @@ public struct RailwayStation {
 	
 	public let iRailID: URL
 	
-	public func name(in userLocale: Locale) -> String {
+	public func name(in userLocale: Locale = Locale.autoupdatingCurrent) -> String {
 		return translatedName.first(where: {$0.key.languageCode == userLocale.languageCode})?.value ?? originalName
 	}
 }
