@@ -10,12 +10,12 @@ import Foundation
 import CoreLocation
 
 public struct RailwayStation: CustomStringConvertible {
+
 	public let originalName: String
-	let translatedName: [Locale:String]
-	
 	public let location: CLLocation
-	
 	public let iRailID: URL
+	
+	let translatedName: [Locale:String]
 	
 	public func name(in userLocale: Locale = Locale.autoupdatingCurrent) -> String {
 		return translatedName.first(where: {$0.key.languageCode == userLocale.languageCode})?.value ?? originalName
@@ -49,7 +49,8 @@ extension RailwayStation: Decodable {
 		let longitude = CLLocationDegrees(try container.decode(String.self, forKey: .longitude))!
 		location = CLLocation(latitude: latitude, longitude: longitude)
 		
-		if var alternativeNamesArray = try? container.nestedUnkeyedContainer(forKey: .alternative) {
+		if container.contains(.alternative) {
+			var alternativeNamesArray = try container.nestedUnkeyedContainer(forKey: .alternative)
 			var names = [Locale:String]()
 			while !alternativeNamesArray.isAtEnd {
 				let object = try alternativeNamesArray.nestedContainer(keyedBy: AlternativeNameCodingKeys.self)
