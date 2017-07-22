@@ -10,14 +10,14 @@ import Foundation
 import CoreLocation
 
 public struct RailwayStation {
-	let originalName: String
+	public let originalName: String
 	let translatedName: [Locale:String]
 	
-	let location: CLLocation
+	public let location: CLLocation
 	
-	let iRailID: URL
+	public let iRailID: URL
 	
-	func name(in userLocale: Locale) -> String {
+	public func name(in userLocale: Locale) -> String {
 		return translatedName.first(where: {$0.key.languageCode == userLocale.languageCode})?.value ?? originalName
 	}
 }
