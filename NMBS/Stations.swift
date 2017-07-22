@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-public struct RailwayStation {
+public struct RailwayStation: CustomStringConvertible {
 	public let originalName: String
 	let translatedName: [Locale:String]
 	
@@ -19,6 +19,10 @@ public struct RailwayStation {
 	
 	public func name(in userLocale: Locale = Locale.autoupdatingCurrent) -> String {
 		return translatedName.first(where: {$0.key.languageCode == userLocale.languageCode})?.value ?? originalName
+	}
+	
+	public var description: String {
+		return originalName
 	}
 }
 

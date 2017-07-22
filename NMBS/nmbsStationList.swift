@@ -24,7 +24,6 @@ let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 
 public func downloadStations() throws -> [RailwayStation] {
 	let stationsJSON = try Data(contentsOf: nmbsStationSource)
-	let jsonDecoder = JSONDecoder()
 	
 	return try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations
 }

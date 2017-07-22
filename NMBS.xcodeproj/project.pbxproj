@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
 		74E29A351F11000A006B40CD /* NMBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E29A2B1F11000A006B40CD /* NMBS.framework */; };
 		74E29A3A1F11000A006B40CD /* NMBSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* NMBSTests.swift */; };
 		74E29A3C1F11000A006B40CD /* NMBS.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E29A2E1F11000A006B40CD /* NMBS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E29A461F110034006B40CD /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* Stations.swift */; };
 		74FA53B01F23144100EB3681 /* nmbsStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* nmbsStationList.swift */; };
+		74FA53B21F233B4E00EB3681 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Directions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74C3F1181F234A0C003C46A0 /* decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decoder.swift; sourceTree = "<group>"; };
 		74E29A2B1F11000A006B40CD /* NMBS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMBS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E29A2E1F11000A006B40CD /* NMBS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS.h; sourceTree = "<group>"; };
 		74E29A2F1F11000A006B40CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		74E29A3B1F11000A006B40CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E29A451F110033006B40CD /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		74FA53AF1F23144100EB3681 /* nmbsStationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nmbsStationList.swift; sourceTree = "<group>"; };
+		74FA53B11F233B4E00EB3681 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				74E29A2E1F11000A006B40CD /* NMBS.h */,
+				74C3F1181F234A0C003C46A0 /* decoder.swift */,
 				74E29A451F110033006B40CD /* Stations.swift */,
 				74FA53AF1F23144100EB3681 /* nmbsStationList.swift */,
 				74E29A2F1F11000A006B40CD /* Info.plist */,
+				74FA53B11F233B4E00EB3681 /* Directions.swift */,
 			);
 			path = NMBS;
 			sourceTree = "<group>";
@@ -202,6 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FA53B01F23144100EB3681 /* nmbsStationList.swift in Sources */,
+				74FA53B21F233B4E00EB3681 /* Directions.swift in Sources */,
+				74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */,
 				74E29A461F110034006B40CD /* Stations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

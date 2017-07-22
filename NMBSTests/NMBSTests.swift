@@ -25,7 +25,6 @@ class NMBSTests: XCTestCase {
 		do {
 			let stations = try NMBS.downloadStations()
 			XCTAssertGreaterThan(stations.count, 10)
-			print(stations.last)
 		} catch {
 			XCTFail(error.localizedDescription)
 		}
