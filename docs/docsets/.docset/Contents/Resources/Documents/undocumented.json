@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": null,
+      "symbol": "RailwayStation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": 12,
+      "symbol": "RailwayStation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": 14,
+      "symbol": "RailwayStation.originalName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": 15,
+      "symbol": "RailwayStation.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": 16,
+      "symbol": "RailwayStation.iRailID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/RailwayStation.swift",
+      "line": 20,
+      "symbol": "RailwayStation.name(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": null,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 11,
+      "symbol": "TrainStop",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 12,
+      "symbol": "TrainStop.stationID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 13,
+      "symbol": "TrainStop.platform",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 14,
+      "symbol": "TrainStop.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 15,
+      "symbol": "TrainStop.delay",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 18,
+      "symbol": "MovingTrain",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 19,
+      "symbol": "MovingTrain.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 20,
+      "symbol": "MovingTrain.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 23,
+      "symbol": "SingleTrainTrip",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 24,
+      "symbol": "SingleTrainTrip.train",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 25,
+      "symbol": "SingleTrainTrip.startPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 26,
+      "symbol": "SingleTrainTrip.endPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 29,
+      "symbol": "Trip",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 30,
+      "symbol": "Trip.trains",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/damiaan/Documents/Projecten/NMBS/NMBS/Trip.swift",
+      "line": 31,
+      "symbol": "Trip.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/damiaan/Documents/Projecten/NMBS"
+}

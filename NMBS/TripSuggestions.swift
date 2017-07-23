@@ -47,9 +47,9 @@ enum TripSuggestionError: Error {
 	case cannotConstructURL
 }
 
-/// Get suggestions for the best trips from one railway station to another
+/// Get suggestions for the best trips from one railway station to another.
 ///
-/// Suggestions come from: https://hello.irail.be/api/1-0/
+/// Suggestions come from: [iRail](https://hello.irail.be/api/1-0/)
 ///
 /// - Parameters:
 ///   - start: The last path component of the iRailID of the departure station

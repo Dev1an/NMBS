@@ -18,6 +18,11 @@ struct iRailStationList: Decodable {
 
 let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 
+
+/// Download all NMBS's railway stations from irail.be
+///
+/// - Returns: A list with all the NMBS Railway stations
+/// - Throws: An error when the download fails
 public func downloadStations() throws -> [RailwayStation] {
 	let stationsJSON = try Data(contentsOf: nmbsStationSource)
 	return try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations
