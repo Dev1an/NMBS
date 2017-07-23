@@ -18,4 +18,5 @@ do {
 	}
 } catch {
 	error
+	print(error)
 }

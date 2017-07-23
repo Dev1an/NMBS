@@ -14,7 +14,7 @@
 		747775891F250951009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
 		7477758A1F250951009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
 		7477758B1F250951009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
-		7477758C1F250951009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		7477758C1F250951009830C8 /* iRailTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* iRailTripStructures.swift */; };
 		7477758D1F250951009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
 		7477758E1F250980009830C8 /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
 		7477758F1F250980009830C8 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
@@ -23,7 +23,7 @@
 		7477759E1F2509C9009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
 		7477759F1F2509C9009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
 		747775A01F2509C9009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
-		747775A11F2509C9009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		747775A11F2509C9009830C8 /* iRailTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* iRailTripStructures.swift */; };
 		747775A21F2509C9009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
 		747775B11F2509EC009830C8 /* NMBS_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747775A81F2509EC009830C8 /* NMBS_tvOS.framework */; };
 		747775B61F2509EC009830C8 /* NMBS_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747775B51F2509EC009830C8 /* NMBS_tvOSTests.swift */; };
@@ -32,12 +32,13 @@
 		747775C01F2509FD009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
 		747775C11F2509FD009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
 		747775C21F2509FD009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
-		747775C31F2509FD009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		747775C31F2509FD009830C8 /* iRailTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* iRailTripStructures.swift */; };
 		747775C41F2509FD009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
 		747775C51F250A0B009830C8 /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
 		747775C61F250A0B009830C8 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
+		747775CD1F251868009830C8 /* NMBS.framework in Copy Files to Organiser */ = {isa = PBXBuildFile; fileRef = 74E29A2B1F11000A006B40CD /* NMBS.framework */; };
 		74B4BF421F2352B0007B6B77 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
-		74B4BF441F236606007B6B77 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		74B4BF441F236606007B6B77 /* iRailTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* iRailTripStructures.swift */; };
 		74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
 		74E29A351F11000A006B40CD /* NMBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E29A2B1F11000A006B40CD /* NMBS.framework */; };
 		74E29A3A1F11000A006B40CD /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
@@ -71,6 +72,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		747775CA1F2517BA009830C8 /* Copy Files to Organiser */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(BUILD_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files to Organiser";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775CC1F25184C009830C8 /* Copy Files to Organiser */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(BUILD_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				747775CD1F251868009830C8 /* NMBS.framework in Copy Files to Organiser */,
+			);
+			name = "Copy Files to Organiser";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7437430D1F24C4DF003CBA94 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7437430E1F24FA30003CBA94 /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
@@ -89,7 +114,7 @@
 		747775B51F2509EC009830C8 /* NMBS_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBS_tvOSTests.swift; sourceTree = "<group>"; };
 		747775B71F2509EC009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSuggestions.swift; sourceTree = "<group>"; };
-		74B4BF431F236606007B6B77 /* JsonTripStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTripStructures.swift; sourceTree = "<group>"; };
+		74B4BF431F236606007B6B77 /* iRailTripStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRailTripStructures.swift; sourceTree = "<group>"; };
 		74C3F1181F234A0C003C46A0 /* decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decoder.swift; sourceTree = "<group>"; };
 		74E29A2B1F11000A006B40CD /* NMBS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMBS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E29A2E1F11000A006B40CD /* NMBS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS.h; sourceTree = "<group>"; };
@@ -247,7 +272,7 @@
 				74E29A451F110033006B40CD /* RailwayStation.swift */,
 				74FA53AF1F23144100EB3681 /* RailwayStationList.swift */,
 				74FA53B11F233B4E00EB3681 /* Trip.swift */,
-				74B4BF431F236606007B6B77 /* JsonTripStructures.swift */,
+				74B4BF431F236606007B6B77 /* iRailTripStructures.swift */,
 				74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */,
 				74E29A2F1F11000A006B40CD /* Info.plist */,
 			);
@@ -364,6 +389,7 @@
 				747775A41F2509EC009830C8 /* Frameworks */,
 				747775A51F2509EC009830C8 /* Headers */,
 				747775A61F2509EC009830C8 /* Resources */,
+				747775CA1F2517BA009830C8 /* Copy Files to Organiser */,
 			);
 			buildRules = (
 			);
@@ -400,6 +426,7 @@
 				74E29A271F11000A006B40CD /* Frameworks */,
 				74E29A281F11000A006B40CD /* Headers */,
 				74E29A291F11000A006B40CD /* Resources */,
+				747775CC1F25184C009830C8 /* Copy Files to Organiser */,
 			);
 			buildRules = (
 			);
@@ -542,7 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7477758C1F250951009830C8 /* JsonTripStructures.swift in Sources */,
+				7477758C1F250951009830C8 /* iRailTripStructures.swift in Sources */,
 				7477758B1F250951009830C8 /* Trip.swift in Sources */,
 				747775891F250951009830C8 /* RailwayStation.swift in Sources */,
 				7477758A1F250951009830C8 /* RailwayStationList.swift in Sources */,
@@ -564,7 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747775A11F2509C9009830C8 /* JsonTripStructures.swift in Sources */,
+				747775A11F2509C9009830C8 /* iRailTripStructures.swift in Sources */,
 				747775A01F2509C9009830C8 /* Trip.swift in Sources */,
 				7477759E1F2509C9009830C8 /* RailwayStation.swift in Sources */,
 				7477759F1F2509C9009830C8 /* RailwayStationList.swift in Sources */,
@@ -577,7 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747775C31F2509FD009830C8 /* JsonTripStructures.swift in Sources */,
+				747775C31F2509FD009830C8 /* iRailTripStructures.swift in Sources */,
 				747775C21F2509FD009830C8 /* Trip.swift in Sources */,
 				747775C01F2509FD009830C8 /* RailwayStation.swift in Sources */,
 				747775C11F2509FD009830C8 /* RailwayStationList.swift in Sources */,
@@ -602,7 +629,7 @@
 			files = (
 				74FA53B01F23144100EB3681 /* RailwayStationList.swift in Sources */,
 				74FA53B21F233B4E00EB3681 /* Trip.swift in Sources */,
-				74B4BF441F236606007B6B77 /* JsonTripStructures.swift in Sources */,
+				74B4BF441F236606007B6B77 /* iRailTripStructures.swift in Sources */,
 				74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */,
 				74E29A461F110034006B40CD /* RailwayStation.swift in Sources */,
 				74B4BF421F2352B0007B6B77 /* TripSuggestions.swift in Sources */,
@@ -1039,6 +1066,7 @@
 				747775831F25093E009830C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747775871F25093E009830C8 /* Build configuration list for PBXNativeTarget "NMBS-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1047,6 +1075,7 @@
 				747775851F25093E009830C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7477759A1F2509B2009830C8 /* Build configuration list for PBXNativeTarget "NMBS-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1055,6 +1084,7 @@
 				7477759C1F2509B2009830C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747775B91F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1063,6 +1093,7 @@
 				747775BB1F2509EC009830C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747775BC1F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1071,6 +1102,7 @@
 				747775BE1F2509EC009830C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E29A251F11000A006B40CD /* Build configuration list for PBXProject "NMBS" */ = {
 			isa = XCConfigurationList;

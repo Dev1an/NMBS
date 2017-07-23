@@ -11,7 +11,7 @@ import CoreLocation
 
 
 /// Basic information of a railway station provided by iRail
-public struct RailwayStation: CustomStringConvertible {
+public struct RailwayStation: Codable, CustomStringConvertible {
 
 	// MARK: - Type aliases
 	
@@ -49,46 +49,48 @@ public struct RailwayStation: CustomStringConvertible {
 	}
 }
 
-
-extension RailwayStation: Decodable {
-
-	// MARK: - Decoding Extension
-	
-	enum CodingKeys: String, CodingKey {
-		case originalName = "name"
-		case id = "@id"
-		case latitude
-		case longitude
-		case alternative
+extension RailwayStation {
+	enum IRailDecodingError: Error {
+		case unableToParseLatitude(String), unableToParseLongitude(String), unableToParseID(String)
 	}
 	
-	enum AlternativeNameCodingKeys: String, CodingKey {
-		case language = "@language"
-		case value = "@value"
-	}
-
-	/// Initialise a station from an iRail JSON structured decoder
-	public init(from decoder: Decoder) throws {
-		let container = try decoder.container(keyedBy: CodingKeys.self)
-		originalName = try container.decode(String.self, forKey: .originalName)
-		id = try container.decode(URL.self, forKey: .id)
-		
-		let latitude = CLLocationDegrees(try container.decode(String.self, forKey: .latitude))!
-		let longitude = CLLocationDegrees(try container.decode(String.self, forKey: .longitude))!
-		location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-		
-		if container.contains(.alternative) {
-			var alternativeNamesArray = try container.nestedUnkeyedContainer(forKey: .alternative)
-			var names = [Locale:String]()
-			while !alternativeNamesArray.isAtEnd {
-				let object = try alternativeNamesArray.nestedContainer(keyedBy: AlternativeNameCodingKeys.self)
-				let locale = Locale(identifier: try object.decode(String.self, forKey: .language))
-				let name = try object.decode(String.self, forKey: .value)
-				names[locale] = name
-			}
-			translatedName = names
-		} else {
-			translatedName = [:]
+	init(from station: iRailStationList.Station) throws {
+		guard let latitude = CLLocationDegrees(station.latitude) else {
+			throw IRailDecodingError.unableToParseLatitude(station.latitude)
 		}
+		guard let longitude = CLLocationDegrees(station.latitude) else {
+			throw IRailDecodingError.unableToParseLatitude(station.latitude)
+		}
+		guard let id = iRailID(string: station.id) else {
+			throw RailwayStation.IRailDecodingError.unableToParseID(station.id)
+		}
+		self.id = id
+		location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+		originalName = station.name
+		if let alternatives = station.alternatives {
+			var translatedName = [Locale:String]()
+			for translation in alternatives {
+				translatedName[Locale(identifier: translation.language)] = translation.value
+			}
+			self.translatedName = translatedName
+		} else {
+			self.translatedName = [:]
+		}
+	}
+}
+
+extension CLLocationCoordinate2D: Codable {
+	public init(from decoder: Decoder) throws {
+		var container = try decoder.unkeyedContainer()
+		self.init(
+			latitude: try container.decode(CLLocationDegrees.self),
+			longitude: try container.decode(CLLocationDegrees.self)
+		)
+	}
+	
+	public func encode(to encoder: Encoder) throws {
+		var container = encoder.unkeyedContainer()
+		try container.encode(latitude)
+		try container.encode(longitude)
 	}
 }

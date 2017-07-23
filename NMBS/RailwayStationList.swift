@@ -8,12 +8,29 @@
 
 import Foundation
 
-struct iRailStationList: Decodable {
+struct iRailStationList: Codable {
 	enum CodingKeys: String, CodingKey {
 		case stations = "@graph"
-	}	
+	}
 	
-	let stations: [RailwayStation]
+	struct Station: Codable {
+		enum CodingKeys: String, CodingKey {
+			case id = "@id", alternatives = "alternative", latitude, longitude, name
+		}
+		
+		struct Alternative: Codable {
+			enum CodingKeys: String, CodingKey {
+				case language = "@language", value = "@value"
+			}
+			
+			let language, value: String
+		}
+		
+		let id, name, latitude, longitude: String
+		let alternatives: [Alternative]?
+	}
+	
+	let stations: [Station]
 }
 
 let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
@@ -26,5 +43,5 @@ let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 /// - Throws: An error when the download fails
 public func downloadStations() throws -> [RailwayStation] {
 	let stationsJSON = try Data(contentsOf: nmbsStationSource)
-	return try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations
+	return try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations.map {try RailwayStation(from: $0)}
 }
