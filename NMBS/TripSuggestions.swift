@@ -47,6 +47,8 @@ enum TripSuggestionError: Error {
 	case cannotConstructURL
 }
 
+// MARK: - Getting Directions
+
 /// Get suggestions for the best trips from one railway station to another
 ///
 /// Suggestions come from: https://hello.irail.be/api/1-0/

@@ -18,6 +18,8 @@ struct iRailStationList: Decodable {
 
 let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 
+// MARK: - Getting railway station info
+
 /// Download all NMBS's railway stations from irail.be
 ///
 /// - Returns: A list with all the NMBS Railway stations

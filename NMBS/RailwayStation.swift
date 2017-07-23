@@ -12,6 +12,9 @@ import CoreLocation
 
 /// Basic information of a railway station provided by iRail
 public struct RailwayStation: CustomStringConvertible {
+
+	// MARK: - Type aliases
+	
 	/// iRail defined url that defines an NMBS railway station
 	///
 	/// **Example** http://irail.be/stations/NMBS/007015400
@@ -46,9 +49,11 @@ public struct RailwayStation: CustomStringConvertible {
 	}
 }
 
-// MARK: - Decoding Extension
 
 extension RailwayStation: Decodable {
+
+	// MARK: - Decoding Extension
+	
 	enum CodingKeys: String, CodingKey {
 		case originalName = "name"
 		case id = "@id"
@@ -61,7 +66,8 @@ extension RailwayStation: Decodable {
 		case language = "@language"
 		case value = "@value"
 	}
-	
+
+	/// Initialise a station from an iRail JSON structured decoder
 	public init(from decoder: Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 		originalName = try container.decode(String.self, forKey: .originalName)
