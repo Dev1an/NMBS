@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		7437430F1F24FA30003CBA94 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
+		7477757A1F25093E009830C8 /* NMBS_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747775711F25093E009830C8 /* NMBS_iOS.framework */; };
+		747775811F25093E009830C8 /* NMBS_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 747775731F25093E009830C8 /* NMBS_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		747775881F250951009830C8 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
+		747775891F250951009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
+		7477758A1F250951009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
+		7477758B1F250951009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
+		7477758C1F250951009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		7477758D1F250951009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
+		7477758E1F250980009830C8 /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
+		7477758F1F250980009830C8 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
+		747775991F2509B2009830C8 /* NMBS_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 747775971F2509B2009830C8 /* NMBS_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7477759D1F2509C9009830C8 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
+		7477759E1F2509C9009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
+		7477759F1F2509C9009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
+		747775A01F2509C9009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
+		747775A11F2509C9009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		747775A21F2509C9009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
+		747775B11F2509EC009830C8 /* NMBS_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747775A81F2509EC009830C8 /* NMBS_tvOS.framework */; };
+		747775B61F2509EC009830C8 /* NMBS_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747775B51F2509EC009830C8 /* NMBS_tvOSTests.swift */; };
+		747775B81F2509EC009830C8 /* NMBS_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 747775AA1F2509EC009830C8 /* NMBS_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		747775BF1F2509FD009830C8 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
+		747775C01F2509FD009830C8 /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
+		747775C11F2509FD009830C8 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
+		747775C21F2509FD009830C8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53B11F233B4E00EB3681 /* Trip.swift */; };
+		747775C31F2509FD009830C8 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
+		747775C41F2509FD009830C8 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
+		747775C51F250A0B009830C8 /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
+		747775C61F250A0B009830C8 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
 		74B4BF421F2352B0007B6B77 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
 		74B4BF441F236606007B6B77 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
 		74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
@@ -20,6 +48,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7477757B1F25093E009830C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E29A221F110009006B40CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747775701F25093E009830C8;
+			remoteInfo = "NMBS-iOS";
+		};
+		747775B21F2509EC009830C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E29A221F110009006B40CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747775A71F2509EC009830C8;
+			remoteInfo = "NMBS-tvOS";
+		};
 		74E29A361F11000A006B40CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 74E29A221F110009006B40CD /* Project object */;
@@ -32,6 +74,20 @@
 /* Begin PBXFileReference section */
 		7437430D1F24C4DF003CBA94 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7437430E1F24FA30003CBA94 /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
+		747775711F25093E009830C8 /* NMBS_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMBS_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747775731F25093E009830C8 /* NMBS_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS_iOS.h; sourceTree = "<group>"; };
+		747775741F25093E009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747775791F25093E009830C8 /* NMBS-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NMBS-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		747775801F25093E009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747775951F2509B2009830C8 /* NMBS_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMBS_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747775971F2509B2009830C8 /* NMBS_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS_watchOS.h; sourceTree = "<group>"; };
+		747775981F2509B2009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747775A81F2509EC009830C8 /* NMBS_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMBS_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747775AA1F2509EC009830C8 /* NMBS_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS_tvOS.h; sourceTree = "<group>"; };
+		747775AB1F2509EC009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747775B01F2509EC009830C8 /* NMBS-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NMBS-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		747775B51F2509EC009830C8 /* NMBS_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBS_tvOSTests.swift; sourceTree = "<group>"; };
+		747775B71F2509EC009830C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSuggestions.swift; sourceTree = "<group>"; };
 		74B4BF431F236606007B6B77 /* JsonTripStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTripStructures.swift; sourceTree = "<group>"; };
 		74C3F1181F234A0C003C46A0 /* decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decoder.swift; sourceTree = "<group>"; };
@@ -47,6 +103,43 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7477756D1F25093E009830C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775761F25093E009830C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7477757A1F25093E009830C8 /* NMBS_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775911F2509B2009830C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775A41F2509EC009830C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775AD1F2509EC009830C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775B11F2509EC009830C8 /* NMBS_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E29A271F11000A006B40CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,12 +158,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		747775721F25093E009830C8 /* NMBS-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				747775731F25093E009830C8 /* NMBS_iOS.h */,
+				747775741F25093E009830C8 /* Info.plist */,
+			);
+			path = "NMBS-iOS";
+			sourceTree = "<group>";
+		};
+		7477757D1F25093E009830C8 /* NMBS-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				747775801F25093E009830C8 /* Info.plist */,
+			);
+			path = "NMBS-iOSTests";
+			sourceTree = "<group>";
+		};
+		747775961F2509B2009830C8 /* NMBS-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				747775971F2509B2009830C8 /* NMBS_watchOS.h */,
+				747775981F2509B2009830C8 /* Info.plist */,
+			);
+			path = "NMBS-watchOS";
+			sourceTree = "<group>";
+		};
+		747775A91F2509EC009830C8 /* NMBS-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				747775AA1F2509EC009830C8 /* NMBS_tvOS.h */,
+				747775AB1F2509EC009830C8 /* Info.plist */,
+			);
+			path = "NMBS-tvOS";
+			sourceTree = "<group>";
+		};
+		747775B41F2509EC009830C8 /* NMBS-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				747775B51F2509EC009830C8 /* NMBS_tvOSTests.swift */,
+				747775B71F2509EC009830C8 /* Info.plist */,
+			);
+			path = "NMBS-tvOSTests";
+			sourceTree = "<group>";
+		};
+		747775C81F250A4C009830C8 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				747775721F25093E009830C8 /* NMBS-iOS */,
+				7477757D1F25093E009830C8 /* NMBS-iOSTests */,
+				747775A91F2509EC009830C8 /* NMBS-tvOS */,
+				747775B41F2509EC009830C8 /* NMBS-tvOSTests */,
+				747775961F2509B2009830C8 /* NMBS-watchOS */,
+			);
+			name = Platforms;
+			sourceTree = "<group>";
+		};
 		74E29A211F110009006B40CD = {
 			isa = PBXGroup;
 			children = (
 				7437430D1F24C4DF003CBA94 /* README.md */,
 				74E29A2D1F11000A006B40CD /* NMBS */,
 				74E29A381F11000A006B40CD /* NMBSTests */,
+				747775C81F250A4C009830C8 /* Platforms */,
 				74E29A2C1F11000A006B40CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +230,11 @@
 			children = (
 				74E29A2B1F11000A006B40CD /* NMBS.framework */,
 				74E29A341F11000A006B40CD /* NMBSTests.xctest */,
+				747775711F25093E009830C8 /* NMBS_iOS.framework */,
+				747775791F25093E009830C8 /* NMBS-iOSTests.xctest */,
+				747775951F2509B2009830C8 /* NMBS_watchOS.framework */,
+				747775A81F2509EC009830C8 /* NMBS_tvOS.framework */,
+				747775B01F2509EC009830C8 /* NMBS-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +267,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7477756E1F25093E009830C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775811F25093E009830C8 /* NMBS_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775921F2509B2009830C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775991F2509B2009830C8 /* NMBS_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775A51F2509EC009830C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775B81F2509EC009830C8 /* NMBS_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E29A281F11000A006B40CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,6 +302,96 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		747775701F25093E009830C8 /* NMBS-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747775861F25093E009830C8 /* Build configuration list for PBXNativeTarget "NMBS-iOS" */;
+			buildPhases = (
+				7477756C1F25093E009830C8 /* Sources */,
+				7477756D1F25093E009830C8 /* Frameworks */,
+				7477756E1F25093E009830C8 /* Headers */,
+				7477756F1F25093E009830C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NMBS-iOS";
+			productName = "NMBS-iOS";
+			productReference = 747775711F25093E009830C8 /* NMBS_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		747775781F25093E009830C8 /* NMBS-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747775871F25093E009830C8 /* Build configuration list for PBXNativeTarget "NMBS-iOSTests" */;
+			buildPhases = (
+				747775751F25093E009830C8 /* Sources */,
+				747775761F25093E009830C8 /* Frameworks */,
+				747775771F25093E009830C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7477757C1F25093E009830C8 /* PBXTargetDependency */,
+			);
+			name = "NMBS-iOSTests";
+			productName = "NMBS-iOSTests";
+			productReference = 747775791F25093E009830C8 /* NMBS-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		747775941F2509B2009830C8 /* NMBS-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7477759A1F2509B2009830C8 /* Build configuration list for PBXNativeTarget "NMBS-watchOS" */;
+			buildPhases = (
+				747775901F2509B2009830C8 /* Sources */,
+				747775911F2509B2009830C8 /* Frameworks */,
+				747775921F2509B2009830C8 /* Headers */,
+				747775931F2509B2009830C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NMBS-watchOS";
+			productName = "NMBS-watchOS";
+			productReference = 747775951F2509B2009830C8 /* NMBS_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		747775A71F2509EC009830C8 /* NMBS-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747775B91F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOS" */;
+			buildPhases = (
+				747775A31F2509EC009830C8 /* Sources */,
+				747775A41F2509EC009830C8 /* Frameworks */,
+				747775A51F2509EC009830C8 /* Headers */,
+				747775A61F2509EC009830C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NMBS-tvOS";
+			productName = "NMBS-tvOS";
+			productReference = 747775A81F2509EC009830C8 /* NMBS_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		747775AF1F2509EC009830C8 /* NMBS-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747775BC1F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOSTests" */;
+			buildPhases = (
+				747775AC1F2509EC009830C8 /* Sources */,
+				747775AD1F2509EC009830C8 /* Frameworks */,
+				747775AE1F2509EC009830C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				747775B31F2509EC009830C8 /* PBXTargetDependency */,
+			);
+			name = "NMBS-tvOSTests";
+			productName = "NMBS-tvOSTests";
+			productReference = 747775B01F2509EC009830C8 /* NMBS-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		74E29A2A1F11000A006B40CD /* NMBS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E29A3F1F11000A006B40CD /* Build configuration list for PBXNativeTarget "NMBS" */;
@@ -169,6 +438,21 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Damiaan Dufaux";
 				TargetAttributes = {
+					747775701F25093E009830C8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					747775781F25093E009830C8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					747775941F2509B2009830C8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					747775A71F2509EC009830C8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					747775AF1F2509EC009830C8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
 					74E29A2A1F11000A006B40CD = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -192,11 +476,51 @@
 			targets = (
 				74E29A2A1F11000A006B40CD /* NMBS */,
 				74E29A331F11000A006B40CD /* NMBSTests */,
+				747775701F25093E009830C8 /* NMBS-iOS */,
+				747775781F25093E009830C8 /* NMBS-iOSTests */,
+				747775A71F2509EC009830C8 /* NMBS-tvOS */,
+				747775AF1F2509EC009830C8 /* NMBS-tvOSTests */,
+				747775941F2509B2009830C8 /* NMBS-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7477756F1F25093E009830C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775771F25093E009830C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775931F2509B2009830C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775A61F2509EC009830C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775AE1F2509EC009830C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E29A291F11000A006B40CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +538,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7477756C1F25093E009830C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7477758C1F250951009830C8 /* JsonTripStructures.swift in Sources */,
+				7477758B1F250951009830C8 /* Trip.swift in Sources */,
+				747775891F250951009830C8 /* RailwayStation.swift in Sources */,
+				7477758A1F250951009830C8 /* RailwayStationList.swift in Sources */,
+				7477758D1F250951009830C8 /* TripSuggestions.swift in Sources */,
+				747775881F250951009830C8 /* decoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775751F25093E009830C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7477758F1F250980009830C8 /* TripTests.swift in Sources */,
+				7477758E1F250980009830C8 /* RailwayStationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775901F2509B2009830C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775A11F2509C9009830C8 /* JsonTripStructures.swift in Sources */,
+				747775A01F2509C9009830C8 /* Trip.swift in Sources */,
+				7477759E1F2509C9009830C8 /* RailwayStation.swift in Sources */,
+				7477759F1F2509C9009830C8 /* RailwayStationList.swift in Sources */,
+				747775A21F2509C9009830C8 /* TripSuggestions.swift in Sources */,
+				7477759D1F2509C9009830C8 /* decoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775A31F2509EC009830C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775C31F2509FD009830C8 /* JsonTripStructures.swift in Sources */,
+				747775C21F2509FD009830C8 /* Trip.swift in Sources */,
+				747775C01F2509FD009830C8 /* RailwayStation.swift in Sources */,
+				747775C11F2509FD009830C8 /* RailwayStationList.swift in Sources */,
+				747775C41F2509FD009830C8 /* TripSuggestions.swift in Sources */,
+				747775BF1F2509FD009830C8 /* decoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747775AC1F2509EC009830C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747775C51F250A0B009830C8 /* RailwayStationTests.swift in Sources */,
+				747775C61F250A0B009830C8 /* TripTests.swift in Sources */,
+				747775B61F2509EC009830C8 /* NMBS_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E29A261F11000A006B40CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +621,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7477757C1F25093E009830C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747775701F25093E009830C8 /* NMBS-iOS */;
+			targetProxy = 7477757B1F25093E009830C8 /* PBXContainerItemProxy */;
+		};
+		747775B31F2509EC009830C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747775A71F2509EC009830C8 /* NMBS-tvOS */;
+			targetProxy = 747775B21F2509EC009830C8 /* PBXContainerItemProxy */;
+		};
 		74E29A371F11000A006B40CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 74E29A2A1F11000A006B40CD /* NMBS */;
@@ -247,6 +639,211 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		747775821F25093E009830C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		747775831F25093E009830C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747775841F25093E009830C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "NMBS-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		747775851F25093E009830C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "NMBS-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7477759B1F2509B2009830C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		7477759C1F2509B2009830C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		747775BA1F2509EC009830C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		747775BB1F2509EC009830C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NMBS-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747775BD1F2509EC009830C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "NMBS-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		747775BE1F2509EC009830C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7TD9A665TC;
+				INFOPLIST_FILE = "NMBS-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devian.NMBS-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		74E29A3D1F11000A006B40CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +1032,46 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		747775861F25093E009830C8 /* Build configuration list for PBXNativeTarget "NMBS-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747775821F25093E009830C8 /* Debug */,
+				747775831F25093E009830C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		747775871F25093E009830C8 /* Build configuration list for PBXNativeTarget "NMBS-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747775841F25093E009830C8 /* Debug */,
+				747775851F25093E009830C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7477759A1F2509B2009830C8 /* Build configuration list for PBXNativeTarget "NMBS-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7477759B1F2509B2009830C8 /* Debug */,
+				7477759C1F2509B2009830C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		747775B91F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747775BA1F2509EC009830C8 /* Debug */,
+				747775BB1F2509EC009830C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		747775BC1F2509EC009830C8 /* Build configuration list for PBXNativeTarget "NMBS-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747775BD1F2509EC009830C8 /* Debug */,
+				747775BE1F2509EC009830C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		74E29A251F11000A006B40CD /* Build configuration list for PBXProject "NMBS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

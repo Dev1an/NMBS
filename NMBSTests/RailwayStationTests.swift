@@ -7,12 +7,19 @@
 //
 
 import XCTest
-@testable import NMBS
+
+#if os(macOS)
+	@testable import NMBS
+#elseif os(iOS)
+	@testable import NMBS_iOS
+#elseif os(tvOS)
+	@testable import NMBS_tvOS
+#endif
 
 class RailwayStationTests: XCTestCase {
 	
     func testDownloadStationList() throws {
-		let stations = try NMBS.downloadStations()
+		let stations = try downloadStations()
 		XCTAssertGreaterThan(stations.count, 10)
 		
 		let halle = stations.first {$0.originalName == "Halle"}
