@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7437430F1F24FA30003CBA94 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
 		74B4BF421F2352B0007B6B77 /* TripSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */; };
 		74B4BF441F236606007B6B77 /* JsonTripStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4BF431F236606007B6B77 /* JsonTripStructures.swift */; };
 		74C3F1191F234A0C003C46A0 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
 		74E29A351F11000A006B40CD /* NMBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E29A2B1F11000A006B40CD /* NMBS.framework */; };
-		74E29A3A1F11000A006B40CD /* NMBSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* NMBSTests.swift */; };
+		74E29A3A1F11000A006B40CD /* RailwayStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A391F11000A006B40CD /* RailwayStationTests.swift */; };
 		74E29A3C1F11000A006B40CD /* NMBS.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E29A2E1F11000A006B40CD /* NMBS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E29A461F110034006B40CD /* RailwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E29A451F110033006B40CD /* RailwayStation.swift */; };
 		74FA53B01F23144100EB3681 /* RailwayStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA53AF1F23144100EB3681 /* RailwayStationList.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7437430D1F24C4DF003CBA94 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7437430E1F24FA30003CBA94 /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
 		74B4BF411F2352B0007B6B77 /* TripSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSuggestions.swift; sourceTree = "<group>"; };
 		74B4BF431F236606007B6B77 /* JsonTripStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTripStructures.swift; sourceTree = "<group>"; };
 		74C3F1181F234A0C003C46A0 /* decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decoder.swift; sourceTree = "<group>"; };
@@ -37,7 +39,7 @@
 		74E29A2E1F11000A006B40CD /* NMBS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMBS.h; sourceTree = "<group>"; };
 		74E29A2F1F11000A006B40CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E29A341F11000A006B40CD /* NMBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E29A391F11000A006B40CD /* NMBSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBSTests.swift; sourceTree = "<group>"; };
+		74E29A391F11000A006B40CD /* RailwayStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayStationTests.swift; sourceTree = "<group>"; };
 		74E29A3B1F11000A006B40CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E29A451F110033006B40CD /* RailwayStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayStation.swift; sourceTree = "<group>"; };
 		74FA53AF1F23144100EB3681 /* RailwayStationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayStationList.swift; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 		74E29A381F11000A006B40CD /* NMBSTests */ = {
 			isa = PBXGroup;
 			children = (
-				74E29A391F11000A006B40CD /* NMBSTests.swift */,
+				74E29A391F11000A006B40CD /* RailwayStationTests.swift */,
+				7437430E1F24FA30003CBA94 /* TripTests.swift */,
 				74E29A3B1F11000A006B40CD /* Info.plist */,
 			);
 			path = NMBSTests;
@@ -228,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E29A3A1F11000A006B40CD /* NMBSTests.swift in Sources */,
+				7437430F1F24FA30003CBA94 /* TripTests.swift in Sources */,
+				74E29A3A1F11000A006B40CD /* RailwayStationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

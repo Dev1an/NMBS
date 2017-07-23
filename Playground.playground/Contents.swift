@@ -1,6 +1,6 @@
 //: Playground - noun: a place where people can play
 
-import Cocoa
+import Foundation
 import NMBS
 
 do {
@@ -10,17 +10,11 @@ do {
 		return stations.first(where: {$0.originalName == name})
 	}
 
-	if let halle = findStation(named: "Halle"), let leuven = findStation(named: "Oud-Heverlee") {
-		 halle.iRailID.lastPathComponent
-		leuven.iRailID.lastPathComponent
+	if let halle = findStation(named: "Halle"), let oudHeverlee = findStation(named: "Oud-Heverlee") {
+		 halle.id.lastPathComponent
+		oudHeverlee.id.lastPathComponent
 
-		let suggestions = try suggestionsForTrip(from: halle, to: leuven)
-		suggestions.forEach {
-			print($0)
-			$0.trains.forEach {
-				print("  Spoor \($0.startPoint.platform), richting \($0.train.direction)")
-			}
-		}
+		try suggestionsForTrip(from: halle, to: oudHeverlee).forEach { print($0, "\n") }
 	}
 } catch {
 	print(error)

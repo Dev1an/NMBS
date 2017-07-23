@@ -15,7 +15,7 @@ public struct RailwayStation: CustomStringConvertible {
 	/// iRail defined url that defines an NMBS railway station
 	///
 	/// **Example** http://irail.be/stations/NMBS/007015400
-	public typealias ID = URL
+	public typealias iRailID = URL
 	
 	// MARK: - Instance properties
 	
@@ -26,7 +26,7 @@ public struct RailwayStation: CustomStringConvertible {
 	public let location: CLLocationCoordinate2D
 	
 	/// A unique url for the railway station defined by the iRail project.
-	public let iRailID: ID
+	public let id: iRailID
 	
 	let translatedName: [Locale:String]
 	
@@ -51,7 +51,7 @@ public struct RailwayStation: CustomStringConvertible {
 extension RailwayStation: Decodable {
 	enum CodingKeys: String, CodingKey {
 		case originalName = "name"
-		case iRailID = "@id"
+		case id = "@id"
 		case latitude
 		case longitude
 		case alternative
@@ -65,7 +65,7 @@ extension RailwayStation: Decodable {
 	public init(from decoder: Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 		originalName = try container.decode(String.self, forKey: .originalName)
-		iRailID = try container.decode(URL.self, forKey: .iRailID)
+		id = try container.decode(URL.self, forKey: .id)
 		
 		let latitude = CLLocationDegrees(try container.decode(String.self, forKey: .latitude))!
 		let longitude = CLLocationDegrees(try container.decode(String.self, forKey: .longitude))!

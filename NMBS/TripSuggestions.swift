@@ -47,36 +47,6 @@ enum TripSuggestionError: Error {
 	case cannotConstructURL
 }
 
-/// Get suggestions for the best trips from one railway station to another.
-///
-/// Suggestions come from: [iRail](https://hello.irail.be/api/1-0/)
-///
-/// - Parameters:
-///   - start: The last path component of the iRailID of the departure station
-///   - end: The last path component of the iRailID of the arrival station
-/// - Returns: an Array with suggested trips
-/// - Throws: When an error occurs while requesting the suggested trips
-public func suggestionsForTrip(from start: String, to end: String) throws -> [Trip] {
-	guard let url = URL(string: "https://api.irail.be/connections/?from=\(start)&to=\(end)&format=json") else {
-		throw TripSuggestionError.cannotConstructURL
-	}
-	let json = try Data(contentsOf: url)
-	return try jsonDecoder.decode(Suggestions.self, from: json).trips
-}
-
-/// Get suggestions for the best trips from one railway station to another
-///
-/// Suggestions come from: https://hello.irail.be/api/1-0/
-///
-/// - Parameters:
-///   - start: The iRailID of the departure station
-///   - end: The iRailID of the arrival station
-/// - Returns: an Array with suggested trips
-/// - Throws: When an error occurs while requesting the suggested trips
-public func suggestionsForTrip(from start: URL, to end: URL) throws -> [Trip] {
-	return try suggestionsForTrip(from: start.lastPathComponent, to: end.lastPathComponent)
-}
-
 /// Get suggestions for the best trips from one railway station to another
 ///
 /// Suggestions come from: https://hello.irail.be/api/1-0/
@@ -87,5 +57,35 @@ public func suggestionsForTrip(from start: URL, to end: URL) throws -> [Trip] {
 /// - Returns: an Array with suggested trips
 /// - Throws: When an error occurs while requesting the suggested trips
 public func suggestionsForTrip(from start: RailwayStation, to end: RailwayStation) throws -> [Trip] {
-	return try suggestionsForTrip(from: start.iRailID, to: end.iRailID)
+	return try suggestionsForTrip(from: start.id, to: end.id)
+}
+
+/// Get suggestions for the best trips from one railway station to another
+///
+/// Suggestions come from: https://hello.irail.be/api/1-0/
+///
+/// - Parameters:
+///   - start: The id of the departure station
+///   - end: The id of the arrival station
+/// - Returns: an Array with suggested trips
+/// - Throws: When an error occurs while requesting the suggested trips
+public func suggestionsForTrip(from start: RailwayStation.iRailID, to end: RailwayStation.iRailID) throws -> [Trip] {
+	return try suggestionsForTrip(from: start.lastPathComponent, to: end.lastPathComponent)
+}
+
+/// Get suggestions for the best trips from one railway station to another.
+///
+/// Suggestions come from: [iRail](https://hello.irail.be/api/1-0/)
+///
+/// - Parameters:
+///   - start: The last path component of the id of the departure station
+///   - end: The last path component of the id of the arrival station
+/// - Returns: an Array with suggested trips
+/// - Throws: When an error occurs while requesting the suggested trips
+public func suggestionsForTrip(from start: String, to end: String) throws -> [Trip] {
+	guard let url = URL(string: "https://api.irail.be/connections/?from=\(start)&to=\(end)&format=json") else {
+		throw TripSuggestionError.cannotConstructURL
+	}
+	let json = try Data(contentsOf: url)
+	return try jsonDecoder.decode(Suggestions.self, from: json).trips
 }
