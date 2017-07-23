@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import NMBS
 
 class TripTests: XCTestCase {
@@ -16,9 +17,15 @@ class TripTests: XCTestCase {
 	}
 	
     func testSuggestions() throws {
-		guard let halle = URL(string: "http://irail.be/stations/NMBS/008814308") else { throw TestError.invalidRailwayStationID }
-		guard let oudHeverlee = URL(string: "http://irail.be/stations/NMBS/008833134") else { throw TestError.invalidRailwayStationID }
+		guard let halleId = URL(string: "http://irail.be/stations/NMBS/008814308") else { throw TestError.invalidRailwayStationID }
+		guard let oudHeverleeId = URL(string: "http://irail.be/stations/NMBS/008833134") else { throw TestError.invalidRailwayStationID }
+		
+		let halle = RailwayStation(originalName: "Halle", location: CLLocationCoordinate2D(latitude: 0, longitude: 0), id: halleId, translatedName: [:])
+		let oudHeverlee = RailwayStation(originalName: "Oud-Heverlee", location: CLLocationCoordinate2D(latitude: 0, longitude: 0), id: oudHeverleeId, translatedName: [:])
+
 		let suggestedTrips = try suggestionsForTrip(from: halle, to: oudHeverlee)
+		
+		XCTAssertGreaterThan(suggestedTrips.count, 0)
     }
 
     func testPerformanceExample() {
