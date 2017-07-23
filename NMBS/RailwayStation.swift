@@ -9,22 +9,44 @@
 import Foundation
 import CoreLocation
 
-public struct RailwayStation: CustomStringConvertible {
 
+/// Basic information of a railway station provided by iRail
+public struct RailwayStation: CustomStringConvertible {
+	/// iRail defined url that defines an NMBS railway station
+	///
+	/// **Example** http://irail.be/stations/NMBS/007015400
+	public typealias ID = URL
+	
+	// MARK: - Instance properties
+	
+	/// The name of the station in the original language
 	public let originalName: String
-	public let location: CLLocation
-	public let iRailID: URL
+	
+	/// 2D coordinate indicating the geographical location of the railway station
+	public let location: CLLocationCoordinate2D
+	
+	/// A unique url for the railway station defined by the iRail project.
+	public let iRailID: ID
 	
 	let translatedName: [Locale:String]
 	
+	// MARK: - Computed properties
+	
+	/// Translate the name in a specified locale
+	///
+	/// - Parameter userLocale: Optional object containing the desired language. If no locale is provided the user's locale will be used.
+	/// - Returns: The name of the station in the specified locale's language
 	public func name(in userLocale: Locale = Locale.autoupdatingCurrent) -> String {
 		return translatedName.first(where: {$0.key.languageCode == userLocale.languageCode})?.value ?? originalName
 	}
 	
+	/// The name of the station in the user locale's language
 	public var description: String {
-		return originalName
+		return name()
 	}
 }
+
+// MARK: - Decoding Extension
 
 extension RailwayStation: Decodable {
 	enum CodingKeys: String, CodingKey {
@@ -47,7 +69,7 @@ extension RailwayStation: Decodable {
 		
 		let latitude = CLLocationDegrees(try container.decode(String.self, forKey: .latitude))!
 		let longitude = CLLocationDegrees(try container.decode(String.self, forKey: .longitude))!
-		location = CLLocation(latitude: latitude, longitude: longitude)
+		location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 		
 		if container.contains(.alternative) {
 			var alternativeNamesArray = try container.nestedUnkeyedContainer(forKey: .alternative)
