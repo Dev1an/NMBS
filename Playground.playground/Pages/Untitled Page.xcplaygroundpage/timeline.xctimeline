@@ -3,7 +3,12 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/damiaan/Documents/Projecten/NMBS/Playground.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=361&amp;EndingColumnNumber=10&amp;EndingLineNumber=13&amp;StartingColumnNumber=10&amp;StartingLineNumber=13&amp;Timestamp=522528525.548474"
+         documentLocation = "file:///Users/damiaan/Documents/Projecten/NMBS/Playground.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=28&amp;CharacterRangeLoc=351&amp;EndingColumnNumber=28&amp;EndingLineNumber=13&amp;StartingColumnNumber=0&amp;StartingLineNumber=13&amp;Timestamp=522539852.192166"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/damiaan/Documents/Projecten/NMBS/Playground.playground/Pages/Untitled%20Page.xcplaygroundpage#CharacterRangeLen=14&amp;CharacterRangeLoc=383&amp;EndingColumnNumber=0&amp;EndingLineNumber=15&amp;StartingColumnNumber=3&amp;StartingLineNumber=14&amp;Timestamp=522539852.192395"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>

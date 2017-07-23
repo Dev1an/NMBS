@@ -11,7 +11,8 @@ do {
 	}
 
 	if let halle = findStation(named: "Halle"), let oudHeverlee = findStation(named: "Oud-Heverlee") {
-		 halle.id.lastPathComponent
+		halle.id.lastPathComponent
+		halle.location
 		oudHeverlee.id.lastPathComponent
 
 		try suggestionsForTrip(from: halle, to: oudHeverlee).forEach { print($0) }

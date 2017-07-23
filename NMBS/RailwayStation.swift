@@ -58,7 +58,7 @@ extension RailwayStation {
 		guard let latitude = CLLocationDegrees(station.latitude) else {
 			throw IRailDecodingError.unableToParseLatitude(station.latitude)
 		}
-		guard let longitude = CLLocationDegrees(station.latitude) else {
+		guard let longitude = CLLocationDegrees(station.longitude) else {
 			throw IRailDecodingError.unableToParseLatitude(station.latitude)
 		}
 		guard let id = iRailID(string: station.id) else {
