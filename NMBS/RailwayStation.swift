@@ -12,7 +12,6 @@ import CoreLocation
 
 /// Basic information of a railway station provided by iRail
 public struct RailwayStation: Codable, CustomStringConvertible {
-
 	// MARK: - Type aliases
 	
 	/// iRail defined url that defines an NMBS railway station
@@ -76,6 +75,16 @@ extension RailwayStation {
 		} else {
 			self.translatedName = [:]
 		}
+	}
+}
+
+extension RailwayStation: Hashable {
+	public var hashValue: Int {
+		return id.lastPathComponent.hashValue
+	}
+	
+	public static func ==(lhs: RailwayStation, rhs: RailwayStation) -> Bool {
+		return lhs.id == rhs.id
 	}
 }
 
