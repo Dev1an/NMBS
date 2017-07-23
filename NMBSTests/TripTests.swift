@@ -17,7 +17,7 @@ class TripTests: XCTestCase {
 	
     func testSuggestions() throws {
 		guard let halle = URL(string: "http://irail.be/stations/NMBS/008814308") else { throw TestError.invalidRailwayStationID }
-		guard let oudHeverlee = URL(string: "http://irail.be/stations/NMBS/008814308") else { throw TestError.invalidRailwayStationID }
+		guard let oudHeverlee = URL(string: "http://irail.be/stations/NMBS/008833134") else { throw TestError.invalidRailwayStationID }
 		let suggestedTrips = try suggestionsForTrip(from: halle, to: oudHeverlee)
     }
 

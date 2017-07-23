@@ -14,8 +14,8 @@ do {
 		 halle.id.lastPathComponent
 		oudHeverlee.id.lastPathComponent
 
-		try suggestionsForTrip(from: halle, to: oudHeverlee).forEach { print($0, "\n") }
+		try suggestionsForTrip(from: halle, to: oudHeverlee).forEach { print($0) }
 	}
 } catch {
-	print(error)
+	error
 }
