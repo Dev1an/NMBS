@@ -52,7 +52,7 @@ public struct Trip: CustomDebugStringConvertible {
 		timeFormatter.timeStyle = .short
 		let departure = timeFormatter.string(from: trains.first!.startPoint.time)
 		let arrival = timeFormatter.string(from: trains.last!.endPoint.time)
-		let generalInfo = "Trip: \(departure) -> \(arrival) (\(trains.count-1) stops)"
+		let generalInfo = "\(departure) -> \(arrival) (\(trains.count) train\(trains.count==1 ? "":"s"))"
 		let allInfo = trains.reduce(generalInfo) { (string, trip) in
 			"\(string)\n  Train on platform \(trip.startPoint.platform) to \(trip.train.direction)"
 		}

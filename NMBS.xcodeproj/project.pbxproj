@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7437430F1F24FA30003CBA94 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7437430E1F24FA30003CBA94 /* TripTests.swift */; };
+		7474501B1F3C573000718FE6 /* NMBS_iOS.framework in Copy Files to Organizer */ = {isa = PBXBuildFile; fileRef = 747775711F25093E009830C8 /* NMBS_iOS.framework */; };
+		7474501D1F3C576D00718FE6 /* NMBS_watchOS.framework in Copy Files to Organiser */ = {isa = PBXBuildFile; fileRef = 747775951F2509B2009830C8 /* NMBS_watchOS.framework */; };
 		7477757A1F25093E009830C8 /* NMBS_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747775711F25093E009830C8 /* NMBS_iOS.framework */; };
 		747775811F25093E009830C8 /* NMBS_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 747775731F25093E009830C8 /* NMBS_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		747775881F250951009830C8 /* decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3F1181F234A0C003C46A0 /* decoder.swift */; };
@@ -73,6 +75,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7474501A1F3C571900718FE6 /* Copy Files to Organizer */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(BUILD_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				7474501B1F3C573000718FE6 /* NMBS_iOS.framework in Copy Files to Organizer */,
+			);
+			name = "Copy Files to Organizer";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7474501C1F3C575F00718FE6 /* Copy Files to Organiser */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(BUILD_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				7474501D1F3C576D00718FE6 /* NMBS_watchOS.framework in Copy Files to Organiser */,
+			);
+			name = "Copy Files to Organiser";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		747775CA1F2517BA009830C8 /* Copy Files to Organiser */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +359,7 @@
 				7477756D1F25093E009830C8 /* Frameworks */,
 				7477756E1F25093E009830C8 /* Headers */,
 				7477756F1F25093E009830C8 /* Resources */,
+				7474501A1F3C571900718FE6 /* Copy Files to Organizer */,
 			);
 			buildRules = (
 			);
@@ -371,6 +396,7 @@
 				747775911F2509B2009830C8 /* Frameworks */,
 				747775921F2509B2009830C8 /* Headers */,
 				747775931F2509B2009830C8 /* Resources */,
+				7474501C1F3C575F00718FE6 /* Copy Files to Organiser */,
 			);
 			buildRules = (
 			);
