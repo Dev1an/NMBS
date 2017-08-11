@@ -37,11 +37,33 @@ let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 
 // MARK: - Getting railway station info
 
+public enum Response<T> {
+	case success(T)
+	case exception(Error)
+}
+
+public enum NetworkError: Error {
+	case noDataResponse
+}
+
 /// Download all NMBS's railway stations from irail.be
 ///
 /// - Returns: A list with all the NMBS Railway stations
 /// - Throws: An error when the download fails
-public func downloadStations() throws -> [RailwayStation] {
-	let stationsJSON = try Data(contentsOf: nmbsStationSource)
-	return try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations.map {try RailwayStation(from: $0)}
+public func downloadStations(completionHandler: @escaping (Response<[RailwayStation]>)->Void ) {
+	let task = URLSession.shared.dataTask(with: nmbsStationSource) { data, _, possibleError in
+		if let error = possibleError {
+			completionHandler(.exception(error))
+		} else if let stationsJSON = data {
+			do {
+				let stationsList = try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations.map {try RailwayStation(from: $0)}
+				completionHandler(.success(stationsList))
+			} catch {
+				completionHandler(.exception(error))
+			}
+		} else {
+			completionHandler(.exception(NetworkError.noDataResponse))
+		}
+	}
+	task.resume()
 }

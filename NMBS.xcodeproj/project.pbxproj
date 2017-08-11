@@ -695,6 +695,7 @@
 		747775821F25093E009830C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					x86_64,
@@ -724,6 +725,7 @@
 		747775831F25093E009830C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					x86_64,

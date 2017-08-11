@@ -9,7 +9,6 @@
 import Foundation
 import CoreLocation
 
-
 /// Basic information of a railway station provided by iRail
 public struct RailwayStation: Codable, CustomStringConvertible {
 	// MARK: - Type aliases
