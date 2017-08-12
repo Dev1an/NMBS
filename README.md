@@ -12,9 +12,9 @@ This is a modern library to fetch data from the iRail API. It leverages Swift 4'
 ## API reference
 See [documention](https://dev1an.github.io/NMBS/Functions.html)
 
-### Generation
+**Documentation generation**
 
 ```shell
-jazzy --github_url https://github.com/Dev1an/NMBS --github-file-prefix https://github.com/Dev1an/NMBS/blob/master/
+jazzy --github_url https://github.com/Dev1an/NMBS --github-file-prefix https://github.com/Dev1an/NMBS/blob/$(git rev-parse HEAD)
 ```
 
