@@ -5,9 +5,16 @@
 This is a modern library to fetch data from the iRail API. It leverages Swift 4's all new decoding and encoding features.
 
 ## Usage
- - Clone this repository
- - Build the desired framework
- - Include the framework in you package
+- Clone this repository
+- Build the desired framework
+- Include the framework in you package
 
 ## API reference
 See [documention](https://dev1an.github.io/NMBS/Functions.html)
+
+### Generation
+
+```shell
+jazzy --github_url https://github.com/Dev1an/NMBS --github-file-prefix https://github.com/Dev1an/NMBS/blob/master/
+```
+

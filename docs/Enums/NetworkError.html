@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SingleTrainTrip Struct Reference</title>
+    <title>NetworkError Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/SingleTrainTrip" class="dashAnchor"></a>
-    <a title="SingleTrainTrip Struct Reference"></a>
+    <a name="//apple_ref/swift/Enum/NetworkError" class="dashAnchor"></a>
+    <a title="NetworkError Enum Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        SingleTrainTrip Struct Reference
+        NetworkError Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -89,14 +89,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SingleTrainTrip</h1>
+            <h1>NetworkError</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SingleTrainTrip</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NetworkError</span><span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                 </div>
               </div>
-            <p>A trip between two railway stations that only uses one train</p>
+            <p>An error that occurs while fetching information from iRail.be</p>
 
           </section>
           <section class="section task-group-section">
@@ -105,9 +105,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4NMBS15SingleTrainTripV5trainAA06MovingC0Vv"></a>
-                    <a name="//apple_ref/swift/Property/train" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4NMBS15SingleTrainTripV5trainAA06MovingC0Vv">train</a>
+                    <a name="/s:4NMBS12NetworkErrorO14noDataResponseA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noDataResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4NMBS12NetworkErrorO14noDataResponseA2CmF">noDataResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -115,79 +115,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A train riding between <code><a href="../Structs/SingleTrainTrip.html#/s:4NMBS15SingleTrainTripV10startPointAA0C4StopVv">startPoint</a></code> and <code><a href="../Structs/SingleTrainTrip.html#/s:4NMBS15SingleTrainTripV8endPointAA0C4StopVv">endPoint</a></code></p>
+                        <p>There was no data returned and no error information is available.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">train</span><span class="p">:</span> <span class="kt"><a href="../Structs/MovingTrain.html">MovingTrain</a></span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="n">noDataResponse</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Dev1an/NMBS/blob/master//NMBS/Trip.swift#L34">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4NMBS15SingleTrainTripV10startPointAA0C4StopVv"></a>
-                    <a name="//apple_ref/swift/Property/startPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4NMBS15SingleTrainTripV10startPointAA0C4StopVv">startPoint</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The start of the trip</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">startPoint</span><span class="p">:</span> <span class="kt"><a href="../Structs/TrainStop.html">TrainStop</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Dev1an/NMBS/blob/master//NMBS/Trip.swift#L36">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:4NMBS15SingleTrainTripV8endPointAA0C4StopVv"></a>
-                    <a name="//apple_ref/swift/Property/endPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4NMBS15SingleTrainTripV8endPointAA0C4StopVv">endPoint</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The end of the trip</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">endPoint</span><span class="p">:</span> <span class="kt"><a href="../Structs/TrainStop.html">TrainStop</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Dev1an/NMBS/blob/master//NMBS/Trip.swift#L38">Show on GitHub</a>
+                        <a href="https://github.com/Dev1an/NMBS/blob/master//NMBS/RailwayStationList.swift#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

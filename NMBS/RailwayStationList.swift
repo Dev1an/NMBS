@@ -37,12 +37,18 @@ let nmbsStationSource = URL(string: "https://irail.be/stations/NMBS")!
 
 // MARK: - Getting railway station info
 
+
+/// Response to an asynchronous request
 public enum Response<T> {
-	case success(T)
+	/// The request has been processed succesfully and the resulted `data` is available
+	case success(data: T)
+	/// An error occured while processing the request
 	case exception(Error)
 }
 
+/// An error that occurs while fetching information from iRail.be
 public enum NetworkError: Error {
+	/// There was no data returned and no error information is available.
 	case noDataResponse
 }
 
@@ -57,7 +63,7 @@ public func downloadStations(completionHandler: @escaping (Response<[RailwayStat
 		} else if let stationsJSON = data {
 			do {
 				let stationsList = try jsonDecoder.decode(iRailStationList.self, from: stationsJSON).stations.map {try RailwayStation(from: $0)}
-				completionHandler(.success(stationsList))
+				completionHandler(.success(data: stationsList))
 			} catch {
 				completionHandler(.exception(error))
 			}
