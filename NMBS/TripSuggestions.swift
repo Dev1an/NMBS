@@ -58,8 +58,8 @@ enum TripSuggestionError: Error {
 ///   - end: The RailwayStation of the arrival station
 /// - Returns: an Array with suggested trips
 /// - Throws: When an error occurs while requesting the suggested trips
-public func suggestionsForTrip(from start: RailwayStation, to end: RailwayStation) throws -> [Trip] {
-	return try suggestionsForTrip(from: start.id, to: end.id)
+public func suggestionsForTrip(from start: RailwayStation, to end: RailwayStation, completionHandler: @escaping (Response<[Trip]>)->Void ) {
+	suggestionsForTrip(from: start.id, to: end.id, completionHandler: completionHandler)
 }
 
 /// Get suggestions for the best trips from one railway station to another
@@ -71,8 +71,8 @@ public func suggestionsForTrip(from start: RailwayStation, to end: RailwayStatio
 ///   - end: The id of the arrival station
 /// - Returns: an Array with suggested trips
 /// - Throws: When an error occurs while requesting the suggested trips
-public func suggestionsForTrip(from start: RailwayStation.iRailID, to end: RailwayStation.iRailID) throws -> [Trip] {
-	return try suggestionsForTrip(from: start.lastPathComponent, to: end.lastPathComponent)
+public func suggestionsForTrip(from start: RailwayStation.iRailID, to end: RailwayStation.iRailID, completionHandler: @escaping (Response<[Trip]>)->Void ) {
+	suggestionsForTrip(from: start.lastPathComponent, to: end.lastPathComponent, completionHandler: completionHandler)
 }
 
 /// Get suggestions for the best trips from one railway station to another.
@@ -84,10 +84,22 @@ public func suggestionsForTrip(from start: RailwayStation.iRailID, to end: Railw
 ///   - end: The last path component of the id of the arrival station
 /// - Returns: an Array with suggested trips
 /// - Throws: When an error occurs while requesting the suggested trips
-public func suggestionsForTrip(from start: String, to end: String) throws -> [Trip] {
+public func suggestionsForTrip(from start: String, to end: String, completionHandler: @escaping (Response<[Trip]>)->Void ) {
 	guard let url = URL(string: "https://api.irail.be/connections/?from=\(start)&to=\(end)&format=json") else {
-		throw TripSuggestionError.cannotConstructURL
+		completionHandler(.exception(TripSuggestionError.cannotConstructURL))
+		return
 	}
-	let json = try Data(contentsOf: url)
-	return try jsonDecoder.decode(Suggestions.self, from: json).trips
+	let task = URLSession.shared.dataTask(with: url) {
+		if let json = $0 {
+			do {
+				let trips = try jsonDecoder.decode(Suggestions.self, from: json).trips
+				completionHandler(.success(data: trips))
+			} catch {
+				completionHandler(.exception(error))
+			}
+		} else if let error = $2 {
+			completionHandler(.exception(error))
+		}
+	}
+	task.resume()
 }

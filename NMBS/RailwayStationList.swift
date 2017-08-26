@@ -52,10 +52,10 @@ public enum NetworkError: Error {
 	case noDataResponse
 }
 
+
 /// Download all NMBS's railway stations from irail.be
 ///
-/// - Returns: A list with all the NMBS Railway stations
-/// - Throws: An error when the download fails
+/// - Parameter completionHandler: A closure receving either a list of stations or an exception
 public func downloadStations(completionHandler: @escaping (Response<[RailwayStation]>)->Void ) {
 	let task = URLSession.shared.dataTask(with: nmbsStationSource) { data, _, possibleError in
 		if let error = possibleError {
