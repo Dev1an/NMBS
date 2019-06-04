@@ -14,10 +14,14 @@ public struct TrainStop {
 	public let stationID: RailwayStation.iRailID
 	/// The platform on which the train will stop
 	public let platform: String
-	/// The time a train will arrive/depart
+	/// The time a train should arrive/depart according to the schedule, without taking delays into account.
 	public let time: Date
 	/// A time interval that should be added to `time` to get a realistic prediction
 	public let delay: TimeInterval
+	// The time a train will arrive/depart, taking delays into account.
+	public var delayedTime: Date {
+		return time.addingTimeInterval(delay)
+	}
 }
 
 /// A train moving in a speciefied direction

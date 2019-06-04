@@ -15,7 +15,11 @@ struct iRailStationList: Codable {
 	
 	struct Station: Codable {
 		enum CodingKeys: String, CodingKey {
-			case id = "@id", alternatives = "alternative", latitude, longitude, name
+			case name
+			case id = "@id"
+			case alternatives = "alternative"
+			case latitude = "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+			case longitude = "http://www.w3.org/2003/01/geo/wgs84_pos#long"
 		}
 		
 		struct Alternative: Codable {
