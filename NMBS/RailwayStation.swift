@@ -78,8 +78,8 @@ extension RailwayStation {
 }
 
 extension RailwayStation: Hashable {
-	public var hashValue: Int {
-		return id.lastPathComponent.hashValue
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id.lastPathComponent)
 	}
 	
 	public static func ==(lhs: RailwayStation, rhs: RailwayStation) -> Bool {

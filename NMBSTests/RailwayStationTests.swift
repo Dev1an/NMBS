@@ -19,12 +19,24 @@ import XCTest
 class RailwayStationTests: XCTestCase {
 	
     func testDownloadStationList() throws {
-		let stations = try downloadStations()
-		XCTAssertGreaterThan(stations.count, 10)
-		
-		let halle = stations.first {$0.originalName == "Halle"}
-		XCTAssertEqual(halle?.name(in: Locale(identifier: "nl")), "Halle")
-		XCTAssertEqual(halle?.name(in: Locale(identifier: "fr")), "Hal")
+		let expectation = XCTestExpectation(description: "Download all stations and check the station of Halle is included with correct translations")
+
+		downloadStations {
+			switch $0 {
+
+			case .success(let stations):
+				XCTAssertGreaterThan(stations.count, 10)
+
+				let halle = stations.first {$0.originalName == "Halle"}
+				XCTAssertEqual(halle?.name(in: Locale(identifier: "nl")), "Halle")
+				XCTAssertEqual(halle?.name(in: Locale(identifier: "fr")), "Hal")
+			case .exception(let error):
+				XCTFail(error.localizedDescription)
+			}
+			expectation.fulfill()
+		}
+
+		wait(for: [expectation], timeout: 10)
     }
     
     func testRailwayStationDecodingPerformance() throws {
@@ -32,7 +44,7 @@ class RailwayStationTests: XCTestCase {
 		
         self.measure {
 			do {
-				try jsonDecoder.decode(iRailStationList.self, from: jsonData)
+				let _ = try jsonDecoder.decode(iRailStationList.self, from: jsonData)
 			} catch {
 				XCTFail(error.localizedDescription)
 			}
